@@ -7,7 +7,7 @@ empty = """
          3    | |   
                      """
 
-# varianty hodov
+# varianty pervih hodov dlya A
 a_odin = """  
              a b c
              
@@ -32,4 +32,52 @@ a_tri = """
          3   x| |   
                      """    
 
-print(a_odin, a_dva, a_tri)                                                                    
+#varianti pervih hodov dlya B      
+b_odin = """  
+             a b c
+             
+         1   _|x|_   
+         2   _|_|_
+         3    | |   
+                     """
+
+b_dva = """  
+             a b c
+             
+         1   _|_|_   
+         2   _|x|_
+         3    | |   
+                     """  
+
+b_tri = """  
+             a b c
+             
+         1   _|_|_   
+         2   _|_|_
+         3    |x|   
+                     """    
+
+ #varianti pervih hodov dlya C     
+c_odin = """  
+             a b c
+             
+         1   _|_|x   
+         2   _|_|_
+         3    | |   
+                     """
+
+c_dva = """  
+             a b c
+             
+         1   _|_|_   
+         2   _|_|x
+         3    | |   
+                     """  
+
+c_tri = """  
+             a b c
+             
+         1   _|_|_   
+         2   _|_|_
+         3    | |x   
+                     """    
