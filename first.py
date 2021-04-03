@@ -1,0 +1,14 @@
+#название игры в терминале
+pres = """ 
+           x    x   ooo       ggg      aa      m       m     eee
+            x  x   o   o     g        a  a     m m   m m    e   
+             xx    o   o     g  gg   aaaaaa    m  m m  m    eeeee
+            x  x   o   o     g   g   aaaaaa    m   m   m    e   
+           x    x   ooo       ggg    a    a    m       m     eee   
+                                                                   """
+
+print(pres)
+
+
+
+
