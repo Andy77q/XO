@@ -10,11 +10,15 @@ pres = """
 print(pres)
 #Приглашаем пользователя  погирать
 print("Lets play in XXX & OOO")
-#импортирую данные из второго
-import second.py as sc
-#beg = sc.empty
-print(beg)
+#sozdau pole
+field = [1,2,3,4,5,6,7,8,9]
+def print_field(field):
+    print (".............")
+    for i in range(3):
+        print("|", field[0 + i*3], "|", field[1 + i * 3], "|", field[2 + i * 3], "|")
+        print (".............")
 
+print_field(field)
 
 
 
