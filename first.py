@@ -19,6 +19,8 @@ def print_field(field):
         print (".............")
 
 print_field(field)
+print("Игрок1 играет Х Игрок2 О")
+
 
 
 
