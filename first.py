@@ -10,7 +10,7 @@ pres = """
 print(pres)
 #Приглашаем пользователя  погирать
 print("Lets play in XXX & OOO")
-print("Игрок1 играет Х Игрок2 О")
+print("Player1 - X, Player2 - O")
 #sozdau pole
 field = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 def print_field(field):
@@ -43,7 +43,7 @@ def player_input(player_tok):
 def check_win(field):
     win_variant = ((0,1,2), (3,4,5), (6,7,8), (0,3,6), (1,4,7), (2,5,8), (0,4,8), (2,4,6))
     for variant in win_variant:
-        if field[variant[0] == variant[1] == variant[2]]:
+        if field[variant[0]] == field[variant[1]] == field[variant[2]]:
             return field[variant[0]]
     return False
 
@@ -59,12 +59,13 @@ def main(field):
             player_input("O")
         counter += 1
         if counter > 4:
+            check_win(field)
             tmp = check_win(field)
             if tmp:
                 print (tmp, "YOU WIN!!!")
                 win = True
                 break
-        if counter == 9:
+        if counter == 9:  
             print("DRAW!!!")
             break
     print_field(field)
